@@ -1,0 +1,31 @@
+
+1. 회원가입
+
+    url : /api/user/join
+    {
+        "userId":"user1",
+        "password":"user1111",
+        "nickName":"유저원",
+        "name":"김유저",
+        "email":"user1@gmail.com",
+        "phoneNumber":"010-1111-1111"
+    }
+
+2. 회원 리스트
+
+    url : /api/user/list
+    //CREATED_AT / NAME만 선택가능
+    {
+        "page":0,
+        "pageSize":10,
+        "sort":"CREATED_AT"
+    }
+
+3. 회원 정보 업데이트
+
+    url : /api/user/{userId}
+    {
+        "nickName":"업데이트닉네임",
+        "name":"개명유저",
+        "password":"update1111"
+    }
