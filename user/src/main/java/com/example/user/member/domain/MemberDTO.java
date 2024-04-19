@@ -13,7 +13,7 @@ public class MemberDTO {
     @NotBlank(message = "아이디를 입력해주십시오")
     private String userId;
 
-    @Pattern(regexp = "^[a-z]{1}[a-z0-9]{6,15}+$", message = "비밀번호는 영문과 숫자를 조합하여 6~15자리로 입력하여 주십시오.")
+    @Pattern(regexp = "^[a-z]{1}[a-z0-9]{6,20}+$", message = "비밀번호는 영문과 숫자를 조합하여 6~20자리로 입력하여 주십시오.")
     @NotBlank(message = "비밀번호를 입력해주십시오")
     private String password;
 
@@ -25,7 +25,7 @@ public class MemberDTO {
     @NotBlank(message = "이메일을 입력해주십시오")
     private String email;
 
-    @Pattern(regexp = "^[ㄱ-ㅎ|가-힣]{2,8}+$", message = "성함은 한글만 가능하며 2~8자리로 입력하여 주십시오.")
+    @Pattern(regexp = "^[ㄱ-ㅎ|가-힣]{2,10}+$", message = "성함은 한글만 가능하며 2~10자리로 입력하여 주십시오.")
     @NotBlank(message = "성함을 입력해주십시오")
     private String name;
 
